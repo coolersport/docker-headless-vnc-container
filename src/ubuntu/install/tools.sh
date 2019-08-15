@@ -7,7 +7,7 @@ apt-get update
 apt-get install -y vim wget net-tools locales bzip2 \
     python-numpy #used for websockify/novnc
 
-apt-get install curl git ssh
+apt-get install -y curl git ssh
 
 # install gosu
 dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')" && \
